@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f5f0" />
+  <title>Socially — your people, your pace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+  <div id="authView" class="auth-shell">
+    <div class="auth-copy"><span class="logo-mark">s</span><p class="eyebrow">A calmer corner of the internet</p><h1>Share what<br /><em>matters.</em></h1><p class="auth-note">A thoughtful place for the people, ideas, and small moments you want to keep close.</p></div>
+    <div class="auth-card"><div class="auth-tabs"><button class="tab active" data-auth="login">Sign in</button><button class="tab" data-auth="register">Create account</button></div><form id="authForm"><label id="nameField" class="hidden">Your name<input name="name" autocomplete="name" /></label><label>Username<input name="username" autocomplete="username" required placeholder="e.g. maya" /></label><label>Password<input name="password" type="password" autocomplete="current-password" required placeholder="6+ characters" /></label><button class="primary-button" type="submit"><span id="authAction">Sign in</span><span>→</span></button></form><p class="demo-hint">Demo: <strong>maya</strong> / <strong>password123</strong></p><p id="authError" class="form-error"></p></div>
+  </div>
+  <div id="appView" class="app-shell hidden">
+    <header class="topbar"><a class="brand" href="#feed"><span class="logo-mark">s</span><span>socially</span></a><nav><a class="nav-link active" href="#feed">Feed</a><a class="nav-link" href="#discover">Discover</a></nav><div class="top-actions"><button id="searchButton" class="icon-button" aria-label="Search">⌕</button><button id="profileButton" class="profile-chip"><span id="currentAvatar" class="avatar small">MC</span><span id="currentName">Maya Chen</span></button></div></header>
+    <main class="layout"><section class="feed-column"><div class="mobile-heading"><p class="eyebrow">Wednesday, September 16</p><h1>Your feed</h1></div><div class="composer"><div id="composerAvatar" class="avatar">MC</div><form id="postForm"><textarea name="content" maxlength="500" placeholder="What’s on your mind?" required></textarea><div class="composer-footer"><span id="charCount">0 / 500</span><div><button type="button" id="imageButton" class="quiet-button">＋ Add image</button><button class="primary-button small-button" type="submit">Share <span>→</span></button></div></div></form></div><div id="feed" class="post-list"></div></section><aside class="sidebar"><div class="side-intro"><p class="eyebrow">Your space</p><h2>Stay curious,<br /><em>stay connected.</em></h2><p>Follow people who make your world a little more interesting.</p></div><div class="side-section"><div class="section-heading"><h3>People to follow</h3><a href="#discover">See all</a></div><div id="suggestions"></div></div><div class="side-footer">Socially <span>·</span> Made for meaningful moments</div></aside></main>
+  </div>
+  <div id="profileModal" class="modal hidden"><div class="modal-card"><button class="close-button" data-close>×</button><div id="profileContent"></div></div></div>
+  <script src="/app.js"></script>
+</body>
+</html>

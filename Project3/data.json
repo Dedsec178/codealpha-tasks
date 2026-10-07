@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": "usr_99e150abdf",
+      "name": "Alex Morgan",
+      "email": "alex@orbit.test",
+      "passwordHash": "5bc860bd2b979fc1e0fb9ad71ae121eb:8b29cbfabf9a50f62d3eab1b3eac56e0b104ccd64fc1bf5fb04e4c9a3d44a15e85dfa887f2d778ed0e24cd1b0c7e5533798555f57e35f67cfcc21fa0dbb2c713",
+      "createdAt": "2026-10-07T13:54:47.003Z"
+    },
+    {
+      "id": "usr_90eb7f6407",
+      "name": "AliTahir17@",
+      "email": "alitahir51322@gmail.com",
+      "passwordHash": "68565a1af91a69e4a8de3053135572ff:0076a003df246e1c147b0c00c04e3d7b01f03f59f562372ebf4a098b5b31f26e749507884b64aca6a98e85de08d01fd203611c83d1eb74b12853a526f6317a38",
+      "createdAt": "2026-10-07T14:06:55.224Z"
+    },
+    {
+      "id": "usr_93061fbde1",
+      "name": "Browser Tester",
+      "email": "browser-tester-20261007@example.com",
+      "passwordHash": "198c83a67c194b70ae1aa88781fa85f6:633174236c40ab3b5a1ba84e016540a169d27b5980938ac4a846fdbe8c849212b76f25829b7daee6e4e5f681ded51bbaf4645d37576652f22dfe7d5d220121f2",
+      "createdAt": "2026-10-07T14:11:05.747Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj_94d528b87b",
+      "name": "Launch planning",
+      "description": "Coordinate the next release",
+      "color": "#ef8c5b",
+      "ownerId": "usr_99e150abdf",
+      "memberIds": [
+        "usr_99e150abdf"
+      ],
+      "createdAt": "2026-10-07T13:54:47.147Z"
+    },
+    {
+      "id": "prj_4dd85e9361",
+      "name": "Project1",
+      "description": "First project",
+      "color": "#ef8c5b",
+      "ownerId": "usr_90eb7f6407",
+      "memberIds": [
+        "usr_90eb7f6407"
+      ],
+      "createdAt": "2026-10-07T14:08:55.279Z"
+    },
+    {
+      "id": "prj_4338cc4064",
+      "name": "Browser QA",
+      "description": "Verify the full project workflow",
+      "color": "#ef8c5b",
+      "ownerId": "usr_93061fbde1",
+      "memberIds": [
+        "usr_93061fbde1"
+      ],
+      "createdAt": "2026-10-07T14:12:55.558Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk_df6f45e7fc",
+      "projectId": "prj_94d528b87b",
+      "title": "Draft launch brief",
+      "description": "",
+      "status": "done",
+      "priority": "high",
+      "assigneeId": null,
+      "dueDate": null,
+      "createdBy": "usr_99e150abdf",
+      "createdAt": "2026-10-07T13:54:47.157Z"
+    },
+    {
+      "id": "tsk_e6041a73f2",
+      "projectId": "prj_4338cc4064",
+      "title": "Ship the first task",
+      "description": "Add a task from the board",
+      "status": "todo",
+      "priority": "medium",
+      "assigneeId": "usr_93061fbde1",
+      "dueDate": null,
+      "createdBy": "usr_93061fbde1",
+      "createdAt": "2026-10-07T14:12:56.207Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "com_a4e5d189b1",
+      "taskId": "tsk_df6f45e7fc",
+      "authorId": "usr_99e150abdf",
+      "body": "Ready for review.",
+      "createdAt": "2026-10-07T13:54:55.163Z"
+    },
+    {
+      "id": "com_a9459a3c96",
+      "taskId": "tsk_e6041a73f2",
+      "authorId": "usr_93061fbde1",
+      "body": "Looks good to ship.",
+      "createdAt": "2026-10-07T14:12:59.790Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "sess_e2b9f71783",
+      "userId": "usr_99e150abdf"
+    },
+    {
+      "token": "sess_7464d82ee7",
+      "userId": "usr_99e150abdf"
+    },
+    {
+      "token": "sess_fca3cdfe96",
+      "userId": "usr_99e150abdf"
+    },
+    {
+      "token": "sess_19a055ae14",
+      "userId": "usr_90eb7f6407"
+    },
+    {
+      "token": "sess_1b7b953b4f",
+      "userId": "usr_93061fbde1"
+    }
+  ]
+}
